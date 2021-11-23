@@ -1,0 +1,40 @@
+[
+  {
+    "name": "sparrow-mississippi-js",
+    "organization": "U.S. Geological Survey",
+    "description": "Display Spatially-Referenced Regresson On Watershed Attributes (SPARROW) data for Mississippi",
+    "version": "v1.0.0",
+    "status": "Production",
+
+    "permissions": {
+      "usageType": "openSource",
+      "licenses": [
+        {
+          "name": "Public Domain",
+          "URL": "https://github.com/USGS-WiM/sparrow-marb-js/blob/master/LICENSE.md"
+        }
+      ]
+    },
+
+    "homepageURL": null,
+    "downloadURL": "https://github.com/USGS-WiM/sparrow-mississippi-js/archive/master.zip",
+    "disclaimerURL": "https://github.com/USGS-WiM/sparrow-mississippi-js/blob/master/DISCLAIMER.md",
+    "repositoryUrl": "https://github.com/USGS-WiM/sparrow-mississippi-js",
+    "vcs": "git",
+
+    "laborHours": null,
+
+    "tags": ["sparrow", "water quality", "mississippi"],
+
+    "languages": ["javascript", "JQuery", "ESRI"],
+
+    "contact": {
+      "name": "Erik Myers",
+      "email": "emyers@usgs.gov"
+    },
+
+    "date": {
+      "metadataLastUpdated": "2021-11-18"
+    }
+  }
+]
