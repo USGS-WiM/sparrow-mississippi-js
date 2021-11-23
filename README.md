@@ -30,7 +30,7 @@ git clone https://github.com/USGS-WiM/sparrow-mississippi-js.git
 Change to the new newly created directory
 
 ```
-cd sparrow-midwest-js
+cd sparrow-mississippi-js
 ```
 
 Install dependencies using NPM
