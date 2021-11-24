@@ -1469,7 +1469,7 @@ require([
             $.each(response, function (index, responseObj) {
               //UPDATE important! -- make sure that layerIds in 'if' statements below match calibration sites layers in the REST services.
               //Phosphorus Calibration Site InfoWindow
-              if (responseObj.layerId === 36) {
+              if (responseObj.layerId === 28) {
                 var model = "Phosphorus";
                 var calibrationTemplate = new esri.InfoTemplate();
                 calibrationTemplate.setTitle(
@@ -1508,7 +1508,7 @@ require([
 
               //UPDATE important! -- make sure that layerIds in 'if' statements below match calibration sites layers in the REST services
               //Nitrogen Calibration Site InfoWindow
-              if (responseObj.layerId === 37) {
+              if (responseObj.layerId === 29) {
                 var modelN = "Nitrogen";
                 var calibrationTemplateN = new esri.InfoTemplate();
                 calibrationTemplateN.setTitle(
@@ -1545,7 +1545,7 @@ require([
                 calibrationInfoWindow = true;
               }
 
-              if (responseObj.layerId === 38) {
+              if (responseObj.layerId === 30) {
                 var model_q = "Streamflow";
                 var calibrationTemplateN = new esri.InfoTemplate();
                 calibrationTemplateN.setTitle(
@@ -1580,35 +1580,35 @@ require([
                 calibrationInfoWindow = true;
               }
 
-              if (responseObj.layerId === 39) {
+              if (responseObj.layerId === 31) {
                 var model_ss = "Suspended Sediment";
                 var calibrationTemplateN = new esri.InfoTemplate();
                 calibrationTemplateN.setTitle(model_ss + " Calibration Site");
                 //UPDATE important! make sure the field names below match what is in the REST layer
                 calibrationTemplateN.setContent(
                   "<div><b>Station Name:</b> " +
-                    responseObj.feature.attributes.Station_nm +
+                    responseObj.feature.attributes.STATION_NM +
                     "</div><br>" +
                     "<div><b>Station identifier:</b> </b>" +
-                    responseObj.feature.attributes.Station_id +
+                    responseObj.feature.attributes.STATION_ID +
                     "</div><br>" +
                     "<div><b>SPARROW Reach ID: </b>" +
-                    responseObj.feature.attributes.comid +
+                    responseObj.feature.attributes.COMID +
                     "</div><br>" +
                     "<div><b>Constituent (SSC or TSS): </b>" +
-                    responseObj.feature.attributes.Constituen +
+                    responseObj.feature.attributes.CONSTITUEN +
                     "</div><br>" +
                     "<div><b>Beale or Fluxmaster Estimated SSC or TSS Load (MT/yr): " +
                     "</b>" +
-                    Math.round(responseObj.feature.attributes.Actual_mt) +
+                    Math.round(responseObj.feature.attributes.ACTUAL_MT) +
                     "</div><br>" +
                     "<div><b>SPARROW Estimated Factor for converting TSS to SSC: " +
                     "</b>" +
-                    responseObj.feature.attributes.TSS_conv +
+                    responseObj.feature.attributes.TSS_CONV +
                     "</div><br>" +
                     "<div><b>SPARROW Estimated SSC Load (MT/yr): " +
                     "</b>" +
-                    Math.round(responseObj.feature.attributes.PLOAD_mt) +
+                    Math.round(responseObj.feature.attributes.PLOAD_MT) +
                     "</div><br>"
                 );
 
