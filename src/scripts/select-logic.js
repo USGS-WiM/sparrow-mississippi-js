@@ -476,7 +476,7 @@ function setAggregateGroup(groupBySelectedIndex, selectedRadio) {
           layerArrayValue = 9;
         }
         break;
-      case 4:
+      case 3:
         /* if (
           $("#grp3-select")[0].selectedIndex > 0 &&
           $("#grp2-select")[0].selectedIndex > 0 &&
@@ -536,7 +536,7 @@ function setAggregateGroup(groupBySelectedIndex, selectedRadio) {
           layerArrayValue = 16;
         }
         break;
-      case 4:
+      case 3:
         /* if (
           $("#grp3-select")[0].selectedIndex > 0 &&
           $("#grp2-select")[0].selectedIndex > 0 &&
@@ -566,7 +566,7 @@ function setAggregateGroup(groupBySelectedIndex, selectedRadio) {
         } else if ($("#grp1-select")[0].selectedIndex > 0) {
           layerArrayValue = 20; //sg1
         } else {
-          layerArrayValue = 18; //ST
+          layerArrayValue = 17; //ST
         }
         break;
     }
@@ -596,7 +596,7 @@ function setAggregateGroup(groupBySelectedIndex, selectedRadio) {
           layerArrayValue = 23;
         }
         break;
-      case 4:
+      case 3:
         /*  if (
           $("#grp3-select")[0].selectedIndex > 0 &&
           $("#grp2-select")[0].selectedIndex > 0 &&
