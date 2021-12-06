@@ -969,7 +969,7 @@ function getExtraOutfields(outfieldsArr, sparrowLayerId) {
   return finalChartArr;
 }
 
-function generateRenderer() {
+function generateRenderer(reAttempt) {
   require([
     "esri/map",
     "esri/Color",
@@ -1076,6 +1076,11 @@ function generateRenderer() {
     var selectedMetric = $("#displayedMetricSelect")[0].value;
     app.outFields = [selectedMetric];
     app.currentAttribute = selectedMetric;
+
+    //TOOD
+    /* if ((reAttempt = true)) {
+      var classDef = new UniqueValueDfinition();
+    } */
     var classDef = new ClassBreaksDefinition();
     if (app.chosenSource) {
       classDef.classificationField = app.chosenSource.attribute;
@@ -1114,6 +1119,11 @@ function generateRenderer() {
         )
       );
     }
+
+    //test to create a nodata category in the app
+    /* classDef.baseSymbol = new SimpleFillSymbol(
+      SimpleFillSymbol.STYLE_BACKWARD_DIAGONAL
+    ); */
 
     var colorRamp = new AlgorithmicColorRamp();
     //different ramps for phos/nitro

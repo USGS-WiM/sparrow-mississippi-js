@@ -41,15 +41,16 @@ var groupResultsLabels = {
 };
 
 //download locations
-var rootURL = "https://sparrow.wim.usgs.gov/sparrow-southeast-2012/downloads/";
-var phosphorusShapefileURL = rootURL + "southeast_cats_results_tp.zip";
-var streamflowShapefileURL = rootURL + "southeast_cats_results_q.zip";
-var sedimentShapefileURL = rootURL + "southeast_cats_results_ss.zip";
-var nitrogenShapefileURL = rootURL + "southeast_cats_results_tn.zip";
-var phosCalibrationURL = rootURL + "southeast_calibration_sites_tp.zip";
-var nitroCalibrationURL = rootURL + "southeast_calibration_sites_tn.zip";
-var streamflowCalibrationURL = rootURL + "southeast_calibration_sites_q.zip";
-var sedimentCalibrationURL = rootURL + "southeast_calibration_sites_ss.zip";
+var rootURL = "https://sparrow.wim.usgs.gov/sparrow-mississippi/downloads/";
+var phosphorusShapefileURL = rootURL + "MS_Phosphorus.zip";
+var streamflowShapefileURL = rootURL + "MS_Streamflow.zip";
+var sedimentShapefileURL = rootURL + "MS_Sediment.zip";
+var nitrogenShapefileURL = rootURL + "MS_Nitrogen.zip";
+//calibration sites for Mississippi app are included in full download
+/* var phosCalibrationURL = rootURL + "MS_calibration_sites_tp.zip";
+var nitroCalibrationURL = rootURL + "MS_calibration_sites_tn.zip";
+var streamflowCalibrationURL = rootURL + "MS_calibration_sites_q.zip";
+var sedimentCalibrationURL = rootURL + "MS_calibration_sites_ss.zip"; */
 
 var tableOutFields = [
   { field: "FID", name: "Unique Feature Id" },

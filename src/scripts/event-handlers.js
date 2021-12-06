@@ -23,25 +23,25 @@ function loadEventHandlers() {
   /*END RADIO EVENTS*/
 
   //UPDATE: important! make sure the file name is updated_____________________________________________________
-  $("#phosphorusDownload").click(function () {
+  $("#phosphorusDownload").on("click", function () {
     // hope the server sets Content-Disposition: attachment!
     window.location = phosphorusShapefileURL;
   });
   //UPDATE: important! make sure the file name is updated_____________________________________________________
-  $("#nitrogenDownload").click(function () {
+  $("#nitrogenDownload").on("click", function () {
     // hope the server sets Content-Disposition: attachment!
     window.location = nitrogenShapefileURL;
   });
-  $("#streamflowDownload").click(function () {
+  $("#streamflowDownload").on("click", function () {
     // hope the server sets Content-Disposition: attachment!
     window.location = streamflowShapefileURL;
   });
   //UPDATE: important! make sure the file name is updated_____________________________________________________
-  $("#sedimentDownload").click(function () {
+  $("#sedimentDownload").on("click", function () {
     // hope the server sets Content-Disposition: attachment!
     window.location = sedimentShapefileURL;
   });
-  $("#phosphorusCalibrationDownload").click(function () {
+  /* $("#phosphorusCalibrationDownload").click(function () {
     // hope the server sets Content-Disposition: attachment!
     window.location = phosCalibrationURL;
   });
@@ -56,7 +56,7 @@ function loadEventHandlers() {
   $("#streamflowCalibrationDownload").click(function () {
     // hope the server sets Content-Disposition: attachment!
     window.location = streamflowCalibrationURL;
-  });
+  }); */
 
   /* AOI EVENTS */
   $(".aoiSelect").on("change", AOIChange);
