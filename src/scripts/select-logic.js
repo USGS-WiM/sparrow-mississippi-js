@@ -1081,10 +1081,6 @@ function generateRenderer() {
     app.outFields = [selectedMetric];
     app.currentAttribute = selectedMetric;
 
-    //TOOD
-    /* if ((reAttempt = true)) {
-      var classDef = new UniqueValueDfinition();
-    } */
     var classDef = new ClassBreaksDefinition();
     if (app.chosenSource) {
       classDef.classificationField = app.chosenSource.attribute;
@@ -1297,7 +1293,3 @@ function generateRenderer() {
     //$("#page-loader").fadeOut();
   }); // END Dojo
 } //END generateRenderer()
-
-function reAttempt() {
-  generateRenderer();
-}
