@@ -969,7 +969,11 @@ function getExtraOutfields(outfieldsArr, sparrowLayerId) {
   return finalChartArr;
 }
 
-function generateRenderer(reAttempt) {
+function reAttemptRender() {
+  generateRenderer();
+}
+
+function generateRenderer() {
   require([
     "esri/map",
     "esri/Color",
@@ -1253,7 +1257,24 @@ function generateRenderer(reAttempt) {
 
     function errorHandler(err) {
       console.log("generateRenderer Err ", err);
+      //try to reset
+      $("#toast_title").html("Warning");
+      $("#toast_body").html(
+        "Sources reset to default.  Reason: Null values for the selected source " +
+          `${app.chosenSource.label}` +
+          " cannot be displayed"
+      );
+      $("#toast-fixed").show();
+      setTimeout(function () {
+        $("#toast-fixed").hide();
+      }, 4000);
+
+      //switch to all and delete chosen source
+      $("#displayedSourceSelect").selectpicker("val", "All Sources");
+      delete app.chosenSource;
+
       $("#page-loader").fadeOut();
+      reAttemptRender();
     }
 
     function createLegend() {
@@ -1276,3 +1297,7 @@ function generateRenderer(reAttempt) {
     //$("#page-loader").fadeOut();
   }); // END Dojo
 } //END generateRenderer()
+
+function reAttempt() {
+  generateRenderer();
+}
