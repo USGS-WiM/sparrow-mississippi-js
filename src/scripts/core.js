@@ -2996,6 +2996,13 @@ require([
     showAboutModal();
   });
 
+  //Model Documentation Nav button to open About Window with Model Documentation Tab open
+  $("#modelDocumentationNav").click(function () {
+    $("#aboutModalHeader").html("About " + appTitle + " ");
+    $("#aboutModal").modal("show");
+    $("#aboutTab").tab("show");
+  });
+
   function showUserGuideModal() {
     $("#userGuideModal").modal("show");
   }
