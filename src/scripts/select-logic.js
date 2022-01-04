@@ -868,16 +868,16 @@ function getLegendLabels(sparrowLayerId) {
   var label = "";
   var configObject = app.getLayerConfigObject(sparrowLayerId);
   var setModel = function (sparrowLayerId) {
-    if (sparrowLayerId <= 8) {
+    if (sparrowLayerId <= 6) {
       return "Total Phosphorus";
     }
-    if (sparrowLayerId >= 9 && sparrowLayerId <= 17) {
+    if (sparrowLayerId >= 7 && sparrowLayerId <= 13) {
       return "Total Nitrogen";
     }
-    if (sparrowLayerId >= 18 && sparrowLayerId <= 26) {
+    if (sparrowLayerId >= 14 && sparrowLayerId <= 20) {
       return "Streamflow";
     }
-    if (sparrowLayerId > 26) {
+    if (sparrowLayerId > 20) {
       return "Suspended Sediment";
     }
   };
