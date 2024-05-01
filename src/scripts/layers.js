@@ -1,7 +1,3 @@
-/**
- * Created by bdraper on 4/27/2015.
- */
-
 /**UPDATE impoartant! -- when updating to a new application, make sure that all visiblelayer Ids match the corresponding REST service layer.
     Also make sure that titles are appropriate
  **/
@@ -173,7 +169,7 @@ require([
           },
         },
         "NLCD Land Use 2012": {
-          url: "https://gis.wim.usgs.gov/arcgis/rest/services/SWTrends/lu2012_100515_test/ImageServer",
+          url: "https://gis1.wim.usgs.gov/server/rest/services/SWTrends/lu2012_100515_test/ImageServer",
           options: {
             id: "lu2012",
             opacity: 0.5,
