@@ -11,7 +11,7 @@ var appTitle =
 var appVersion = "v0.9.0"; // could pull this from code/package.json
 
 var serviceBaseURL =
-  "https://sparrowtest.wim.usgs.gov/arcgis/rest/services/SparrowMississippi/SparrowMississippi/MapServer/"; //important! UPDATE rest service URL
+  "https://gis1.wim.usgs.gov/server/rest/services/Sparrow/SparrowMississippiUpdated/MapServer/"; //important! UPDATE rest service URL
 var chartUnits = " (kg/yr.)";
 var chartFeatureMax = 2500; //chart will not be available if more than this many polygons are showing on map.
 
@@ -174,13 +174,9 @@ var mappedDefinitions_ss = {
 
 /***UPDATE IMPORTANT! complete with source data Excel key***/
 var phosphorusSourceDefinitions = {
-  s1: "Sewerage Point Sources",
+  s1: "Natural Sources",
   s2: "Urban Land",
-  s3: "Farm Fertilizer",
-  s4: "Manure",
-  s5: "Natural Sources",
-  s6: "Canada",
-  s7: "Phosphate mining",
+  s3: "Farm Fertilizer and Manure",
 };
 
 /***UPDATE IMPORTANT! complete with source data Excel key***/
@@ -189,9 +185,7 @@ var nitrogenSourceDefinitions = {
   s2: "Urban Land",
   s3: "Farm Fertilizer",
   s4: "Manure",
-  s5: "Nitrogen Fixing Crops",
-  s6: "Atmospheric Deposition",
-  s7: "Canada",
+  s5: "Atmospheric Deposition",
 };
 
 /***UPDATE IMPORTANT! complete with source data Excel key***/
