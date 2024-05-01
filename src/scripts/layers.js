@@ -1,7 +1,3 @@
-/**
- * Created by bdraper on 4/27/2015.
- */
-
 /**UPDATE impoartant! -- when updating to a new application, make sure that all visiblelayer Ids match the corresponding REST service layer.
     Also make sure that titles are appropriate
  **/
